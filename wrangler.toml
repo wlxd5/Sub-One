@@ -1,6 +1,9 @@
 name = "sub-one"
-# main = "functions/[[path]].js" # 对于 Pages 项目，通常不需要指定 main，或通过 _worker.js 指定。此处注释掉以免误导 Wrangler。
+main = "functions/[[path]].js" # 对于 Pages 项目，通常不需要指定 main，或通过 _worker.js 指定。此处注释掉以免误导 Wrangler。
 compatibility_date = "2024-06-13"
+
+[assets]
+directory = "./dist"
 
 # KV 命名空间绑定
 # 这是 wrangler.toml 在Pages项目中最重要的作用
